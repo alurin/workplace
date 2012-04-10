@@ -19,6 +19,8 @@ function install_from_git_with_make() {
 apt-get update
 apt-get upgrade
 
+add-apt-repository --yes ppa:webupd8team/sublime-text-2
+
 # Install new application
 cat $DIR/ubuntu-packages | sed -e 's/#.*//' | xargs apt-get install -y --force-yes
 

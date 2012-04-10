@@ -15,5 +15,8 @@ This command creates the Installed Packages folder for you (if necessary), and t
 
 Пакеты
 ------
-* [Sublime Alignment](http://wbond.net/sublime_packages/alignment)
+* Alignment
+* Git
 * ZenCoding
+* Markdown Preview
+* SublimeCodeIntel
