@@ -1,6 +1,10 @@
 #!/bin/bash
 
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-№
-echo
-echo 'PATH=$PATH:' > ~/.bash_profile
+$DIR/install/install-packages.sh
+$DIR/install/install-pear.sh
+
+#
+#echo
+#echo 'PATH=$PATH:' > ~/.bash_profile

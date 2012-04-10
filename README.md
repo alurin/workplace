@@ -1,27 +1,45 @@
 Настройка рабочего места на Ubuntu
 ==================================
 
+Описание
+--------
+
+Подготовка моего рабочего пространства
+
+Установка
+---------
+Запустить скрипт для установки базовых приложений `install.sh`
+
+* [Unity](https://github.com/alurin/workplace/blob/master/doc/unity.md)
+* [Sublime Package Control](https://github.com/alurin/workplace/blob/master/doc/sublime-package-control.md)
+
 Структура катаголов
 -------------------
 
 * `bin`     - Скрипты доступные мне из консоли
-* `etc`     - Настройки для компонентов системы
 * `doc`     - Различная документация
+* `etc`     - Настройки для компонентов системы
+    * `apache2`     - Настройки для Apache2
+    * `bind9`       - Настройки для Bind9
+    * `exim4`       - Настройки для Exim4
+* `install` - Скрипты для подготовки рабочего места
 * `website` - Web-сайты
 * `project` - Другие проекты: библиотеки, приложения
+* `vendor`  - Набор разработчика
 
 Библиотеки
 ----------
-git://github.com/h5bp/html5-boilerplate.git                     html5-boilerplate
-git://github.com/php-fig/fig-standards.git                      fig-standarts
-git://github.com/zendframework/zf2.git                          zf2
-git://github.com/teqneers/PHP-Stream-Wrapper-for-Git.git        php-git
-git://github.com/kriswallsmith/assetic.git                      assetic
-git://github.com/jquery/jquery.git                              jquery
-git://github.com/Modernizr/Modernizr.git                        modernizr
-git://github.com/SlexAxton/yepnope.js.git                       yepnope.js
-git://github.com/jquery/jquery-ui.git                           jquery-ui
-git://github.com/janl/mustache.js.git                           mustache.js
-git://github.com/symfony/Console.git                            symfony-console
-git://github.com/symfony/Yaml.git                               symfony-yaml
-git://github.com/symfony/Process.git                            symfony-process
+
+* [Html5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
+* [PSR standarts](https://github.com/php-fig/fig-standards)
+* [Zend Framework](https://github.com/zendframework/zf2)
+* [Php git library](https://github.com/teqneers/PHP-Stream-Wrapper-for-Git)
+* [Assetic](https://github.com/kriswallsmith/assetic)
+* [jQuery](https://github.com/jquery/jquery)
+* [jQuery UI](https://github.com/jquery/jquery-ui)
+* [Modernizr](https://github.com/Modernizr/Modernizr)
+* [Yepnope.js](https://github.com/SlexAxton/yepnope.js)
+* [Mustache.js](https://github.com/janl/mustache.js)
+* [Symfony Console](https://github.com/symfony/Console)
+* [Symfony Yaml](https://github.com/symfony/Yaml)
+* [Symfony Process](https://github.com/symfony/Process)

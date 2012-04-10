@@ -4,3 +4,36 @@
 [submodule "vendor/php/fig-standarts"]
 	path = vendor/php/fig-standarts
 	url = git://github.com/php-fig/fig-standards.git
+[submodule "vendor/php/zf2"]
+	path = vendor/php/zf2
+	url = git://github.com/zendframework/zf2.git
+[submodule "vendor/php/php-git"]
+	path = vendor/php/php-git
+	url = git://github.com/teqneers/PHP-Stream-Wrapper-for-Git.git
+[submodule "vendor/php/assetic"]
+	path = vendor/php/assetic
+	url = git://github.com/kriswallsmith/assetic.git
+[submodule "vendor/javascript/jquery"]
+	path = vendor/javascript/jquery
+	url = git://github.com/jquery/jquery.git
+[submodule "vendor/javascript/modernizr"]
+	path = vendor/javascript/modernizr
+	url = git://github.com/Modernizr/Modernizr.git
+[submodule "vendor/javascript/yepnope.js"]
+	path = vendor/javascript/yepnope.js
+	url = git://github.com/SlexAxton/yepnope.js.git
+[submodule "vendor/javascript/jquery-ui"]
+	path = vendor/javascript/jquery-ui
+	url = git://github.com/jquery/jquery-ui.git
+[submodule "vendor/javascript/mustache.js"]
+	path = vendor/javascript/mustache.js
+	url = git://github.com/janl/mustache.js.git
+[submodule "vendor/php/symfony-console"]
+	path = vendor/php/symfony-console
+	url = git://github.com/symfony/Console.git
+[submodule "vendor/php/symfony-yaml"]
+	path = vendor/php/symfony-yaml
+	url = git://github.com/symfony/Yaml.git
+[submodule "vendor/php/symfony-process"]
+	path = vendor/php/symfony-process
+	url = git://github.com/symfony/Process.git
