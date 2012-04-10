@@ -1,0 +1,23 @@
+{
+	"auto_upgrade_last_run": 1334049181,
+	"installed_packages":
+	[
+		"Alignment",
+		"Camaleon",
+		"CTags",
+		"Default File Type",
+		"DocBlockr",
+		"Git",
+		"Goto Documentation",
+		"Indent XML",
+		"Markdown Preview",
+		"Package Control",
+		"PhpDoc",
+		"PHPUnit",
+		"SideBarGit",
+		"SublimeCodeIntel",
+		"SublimeTODO",
+		"Todo Manager",
+		"ZenCoding"
+	]
+}

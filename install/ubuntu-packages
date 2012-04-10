@@ -10,8 +10,7 @@ samba
 gadmin-samba
 
 # general
-chromium-browser                # Google Chrome
-sublime-text-2-beta             # Sublime Text 2
+chromium-browser
 
 # Git releates
 bash-completion

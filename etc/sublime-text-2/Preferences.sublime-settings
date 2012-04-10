@@ -1,0 +1,23 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"fallback_encoding": "Cyrillic (Windows 1251)",
+	"font_face": "Ubuntu Mono",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Goto Documentation",
+		"CTags"
+	],
+	"rulers":
+	[
+		80,
+		120
+	],
+	"shift_tab_unindent": true,
+	"tab_completion": false,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

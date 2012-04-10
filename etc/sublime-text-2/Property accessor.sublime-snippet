@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Set ${1:property value}
+ *
+ * @param ${2:Type} \$${3:prop}
+ */
+public function set${3/(.+)/\u\1/}(${2:Type} \$${3})
+{
+    \$this->${3} = \$${3};
+    return \$this;
+}
+
+/**
+ * Returns ${1:property value}
+ *
+ * @return ${2:Type}
+ */
+public function get${3/(.+)/\u\1/}()
+{
+    return \$this->${3};
+}
+]]></content>
+    <tabTrigger>prop</tabTrigger>
+    <scope>source.php</scope>
+    <description>Create propery accessors</description>
+</snippet>

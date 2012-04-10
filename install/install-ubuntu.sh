@@ -15,9 +15,6 @@ function install_from_git_with_make() {
     cd ${current_dir}
 }
 
-# Add repositories
-add-apt-repository --yes ppa:webupd8team/sublime-text-2
-
 # Update all application
 apt-get update
 apt-get upgrade

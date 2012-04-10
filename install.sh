@@ -1,10 +1,14 @@
 #!/bin/bash
 
 DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+USER=~
 
-$DIR/install/install-packages.sh
-$DIR/install/install-pear.sh
+# install packages
 
-#
-#echo
-#echo 'PATH=$PATH:' > ~/.bash_profile
+#sudo $DIR/install/install-packages.sh
+#sudo $DIR/install/install-sublime.sh
+#sudo $DIR/install/install-pear.sh
+
+# replace configs
+rm -Rf $USER/.config/sublime-text-2/Packages/User
+ln -s $DIR/etc/sublime-text-2 $USER/.config/sublime-text-2/Packages/User
