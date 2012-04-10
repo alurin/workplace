@@ -1,0 +1,39 @@
+# dependences
+opt
+compizconfig-settings-manager
+
+# server services
+apache2
+bind9
+exim4
+samba
+gadmin-samba
+
+# general
+chromium-browser                # Google Chrome
+sublime-text-2-beta             # Sublime Text 2
+
+# Git releates
+bash-completion
+git
+git-core
+gitg
+
+# PHP releates
+php5
+libapache2-mod-php5
+php5-intl
+php5-xdebug
+php5-mcrypt
+php5-xsl
+php5-imap
+php5-curl
+php5-mysql
+php5-gd
+php5-cgi
+php5-cli
+php5-dev
+php5-common
+phpunit
+php-benchmark
+php-pear

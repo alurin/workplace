@@ -1,0 +1,6 @@
+[submodule "vendor/html/html5-boilerplate"]
+	path = vendor/html/html5-boilerplate
+	url = git://github.com/h5bp/html5-boilerplate.git
+[submodule "vendor/php/fig-standarts"]
+	path = vendor/php/fig-standarts
+	url = git://github.com/php-fig/fig-standards.git
