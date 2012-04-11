@@ -1,0 +1,39 @@
+#!/bin/bash
+name=$1
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CONF="$( dirname "$DIR" )/etc/apache2/$name.conf"
+ROOT="$( dirname "$DIR" )/website/$name/public"
+LOGS="$( dirname "$DIR" )/website/$name/log"
+
+compressed="$(echo "$name" | grep '^[a-zA-Z][a-zA-Z0-9_-]*$')"
+
+if [ "" == "$compressed" ]
+then
+    echo 'Имя должно начинаться с латинской буквы и содержать только латинские буквы, цифры, знаки подчеркивания и дефис'
+    exit 1;
+fi
+
+if [ -f $CONF ]
+then
+    echo 'Хост уже существует'
+    exit 1;
+fi
+
+echo "<VirtualHost *:80>"                                               >  $CONF
+echo "    ServerName $name.dev"                                         >> $CONF
+echo "    ServerAlias www.$name.dev"                                    >> $CONF
+echo "    ServerAlias $name.kronverk-group.ru"                          >> $CONF
+echo "    ServerAlias $name.kronverk-studio.ru"                         >> $CONF
+echo "    DocumentRoot $ROOT"                                           >> $CONF
+echo "    <Directory $ROOT>"                                            >> $CONF
+echo "        AllowOverride All"                                        >> $CONF
+echo "        Allow from all"                                           >> $CONF
+echo "    </Directory>"                                                 >> $CONF
+echo "    ErrorLog  $LOGS/apache-error.log"                             >> $CONF
+echo "    CustomLog $LOGS/apache-access.log combined"                   >> $CONF
+echo "</VirtualHost>"                                                   >> $CONF
+
+mkdir -p $LOGS
+mkdir -p $ROOT
+
+sudo service apache2 restart
