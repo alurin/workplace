@@ -6,7 +6,6 @@ USER=~
 # install packages
 
 sudo $DIR/install/install-packages.sh
-sudo $DIR/install/install-sublime.sh
 sudo $DIR/install/install-pear.sh
 sudo $DIR/install/update-resolve.sh
 

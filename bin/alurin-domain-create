@@ -1,4 +1,5 @@
 #!/bin/bash
+
 name=$1
 DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CONF="$( dirname "$DIR" )/etc/apache2/$name.conf"
@@ -19,6 +20,7 @@ then
     exit 1;
 fi
 
+echo "Создание виртуального хоста Apache2"
 echo "<VirtualHost *:80>"                                               >  $CONF
 echo "    ServerName $name.dev"                                         >> $CONF
 echo "    ServerAlias www.$name.dev"                                    >> $CONF
@@ -36,4 +38,5 @@ echo "</VirtualHost>"                                                   >> $CONF
 mkdir -p $LOGS
 mkdir -p $ROOT
 
+echo "Перезапуск Apache2"
 sudo service apache2 restart

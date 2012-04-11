@@ -15,11 +15,14 @@ function install_from_git_with_make() {
     cd ${current_dir}
 }
 
+# Add new repositories
+cat $DIR/ubuntu-repositories | sed -e 's/#.*//' | xargs apt-get install -y --force-yes
+
 # Update all application
 apt-get update
 apt-get upgrade
 
-add-apt-repository --yes ppa:webupd8team/sublime-text-2
+apt-get install php5 libapache2-mod-php5
 
 # Install new application
 cat $DIR/ubuntu-packages | sed -e 's/#.*//' | xargs apt-get install -y --force-yes
